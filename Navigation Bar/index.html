@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    
+    <section class="">
+        <div class="border flex justify-between p-3 items-center relative">
+            <div class="font-semibold text-2xl">LOGO</div>
+            <ul class="flex gap-2 max-[500px]:hidden font-semobold capitalize">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <div onclick={showMenu()} id="hamburger" class="flex flex-col gap-1 min-[500px]:hidden">
+                <div class="border w-[20px] border-black"></div>
+                <div class="border w-[20px] border-black"></div>
+                <div class="border w-[20px] border-black"></div>
+            </div>
+            <ul id="hiddenMneu" class="hidden flex-col top-14 w-[100px] gap-2 absolute right-0  font-semobold capitalize">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const hamburger = document.getElementById('hamburger')
+        const hiddenMneu= document.getElementById('hiddenMneu');
+        const showMenu = ()=>{
+            if(hiddenMneu.style.display=='none'){
+                hiddenMneu.style.display='flex'
+            }else{
+                hiddenMneu.style.display='none'
+            }
+
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
