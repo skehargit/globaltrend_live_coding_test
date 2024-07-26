@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <div class="flex relative items-center justify-center h-screen">
+        <div id='popup' onclick={hidepopup()} class="z-[2] hidden h-screen flex w-screen popupDiv absolute bg-black/90 items-center justify-center ">
+            <img class="w-[300px] h-[300px]" src="" alt="">
+        </div>
+        <div class="flex relative z-[1] gap-3 flex-wrap items-center justify-center">
+            <img class="w-[300px]" onclick="openPopup(this.src)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU3HFVnkYFJ_OIogo__Qv58bmhwRqZJcQhOA&s" alt="">
+            <img class="w-[300px]" onclick="openPopup(this.src)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEP6UVN_VlaUmh54QsQynuJ3wG3HPnQy8ORnx4m9VS8zUD3EWT_OAlbbwDTex6BGaxDXk&usqp=CAU" alt="">
+            <img class="w-[300px]" onclick="openPopup(this.src)" src="https://www.html.am/images/html-codes/links/boracay-resort-1000x750.jpg" alt="">
+            <img class="w-[300px]" onclick="openPopup(this.src)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUsyXBqsQt3PXpDsT5tbmuTUpzkRZyN9du0EJ2HXp8nwcdxmoNRHs6DBLFF4BdX5lzNo&usqp=CAU" alt="">
+            
+        </div>
+    </div>
+
+
+    <script src="imgScript.js"></script>
+</body>
+</html>
