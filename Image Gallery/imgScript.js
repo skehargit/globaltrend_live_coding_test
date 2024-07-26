@@ -8,7 +8,8 @@ const hidepopup=()=>{
 const openPopup = (_src)=>{
     if(popup.style.display=='none'){
         popup.style.display='flex'
-        popup.childNodes[1].src=_src
+        // console.log(popup.childNodes)
+        popup.childNodes[3].src=_src
         console.log(popup)
     }else{
         popup.style.display='none'
